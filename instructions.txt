@@ -1,0 +1,33 @@
+Una vez el servidor angular se este ejecutando
+crear componente
+
+task/
+task-form
+task
+
+crear servicio
+
+service/task
+
+instalar firebase:
+npm install firebase @angular/fire
+
+**Conf firestore
+Ir a la seccion de ajustes
+seleccionar aplicacion web
+se genera el token de acceso a nuestra app
+copiar el token y pegarlo dentro de la carpeta enviroments en el documento enviroment.ts creando un objeto
+se vera asi:
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCXu3K5dXXv3zXneZhlKiy3anAT7oaQVYg",
+    authDomain: "angular-firestore-9e743.firebaseapp.com",
+    databaseURL: "https://angular-firestore-9e743.firebaseio.com",
+    projectId: "angular-firestore-9e743",
+    storageBucket: "angular-firestore-9e743.appspot.com",
+    messagingSenderId: "210112285965",
+    appId: "1:210112285965:web:5e7d52832fcf32bb5d3444"
+  }
+};
+
